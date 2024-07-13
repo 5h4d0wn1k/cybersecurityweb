@@ -600,16 +600,6 @@
   <script src="./Cybersecurity Solutions &amp; Services_files/script(1).js.download"></script>
   <script src="./Cybersecurity Solutions &amp; Services_files/formoid.min.js.download"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.11.0/jarallax.min.js"></script>
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3017Z91K70"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'G-3017Z91K70');
-  </script>
 
   <script>
     const apiKey = '68f942665fe04f4ba317b057f29f3198';
@@ -662,15 +652,11 @@
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
-
-      // Serialize form data into JSON format
       const formData = new FormData(form);
       const serializedFormData = {};
       formData.forEach((value, key) => {
         serializedFormData[key] = value;
       });
-
-      // Send form data to the specified endpoint
       fetch('https://getform.io/f/pamqvvja', {
         method: 'POST',
         headers: {
@@ -697,8 +683,6 @@
     });
   });
     </script>
- 
-  <!-- Google tag (gtag.js) -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3017Z91K70"></script>
 <script>
@@ -709,25 +693,29 @@
   gtag('config', 'G-3017Z91K70');
 </script>
 
-  <div id="epd">
-    <div id="cookiesdirective" style="font-family: sans-serif; position: fixed; bottom: 0px; left: 0px; width: 100%; height: auto; background: rgb(255, 255, 255); color: rgb(66, 74, 77); text-align: center; z-index: 1050;">
-        <div class="cookie-wrapper" style="position:relative;height:auto;width:90%;padding:10px;margin-left:auto;margin-right:auto;">
-            <div class="mbr-text">
-                <p class="display-7 alert-message" style="margin: 1rem 0px;">
-                    We use cookies to give you the best experience. Read our 
-                    <a href="privacypolicy.html" style="color: #424a4d; text-decoration: underline;">
-                        cookie policy
-                    </a>.
-                </p>
-            </div>
-            <div class="mbr-section-btn">
-                <a style="margin:0; background-color:#0c2c68 !important; color:#FFFFFF!important; border-color:#0c2c68 !important;" 
-                   id="impliedsubmit" class="btn btn-sm btn-primary display-7">
-                    GOT IT
-                </a>
-            </div>
-        </div>
-    </div>
+<div id="cookiesdirective" style="font-family: sans-serif; position: fixed; bottom: 0px; left: 0px; width: 100%; height: auto; background: rgb(255, 255, 255); color: rgb(66, 74, 77); text-align: center; z-index: 1050;">
+  <div class="cookie-wrapper" style="position:relative;height:auto;width:90%;padding:10px;margin-left:auto;margin-right:auto;">
+      <div class="mbr-text">
+          <p class="display-7 alert-message" style="margin: 1rem 0px;">
+              We use cookies to give you the best experience. Read our 
+              <a href="privacypolicy.html" style="color: #424a4d; text-decoration: underline;">
+                  cookie policy
+              </a>.
+          </p>
+      </div>
+      <div class="mbr-section-btn">
+          <a style="margin:0; background-color:#0c2c68 !important; color:#FFFFFF!important; border-color:#0c2c68 !important;" 
+             id="impliedsubmit" class="btn btn-sm btn-primary display-7">
+              GOT IT
+          </a>
+      </div>
+  </div>
 </div>
+
+<script>
+  document.getElementById('impliedsubmit').onclick = function() {
+    document.getElementById('cookiesdirective').style.display = 'none';
+  };
+</script>
 </body>
 </html>
